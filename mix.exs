@@ -25,7 +25,7 @@ defmodule MadeWithMix.MixProject do
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
       {:ex_doc, "~> 0.21"},
       {:mix_test_watch, "~> 1.0", only: :dev, runtime: false},
-      {:inch_ex, "~> 0.5", only: :docs}
+      {:inch_ex, only: :docs}
     ]
   end
 end

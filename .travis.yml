@@ -7,8 +7,8 @@ script:
   - mix deps.get
   - mix compile
   - mix test
-after_success:
-  - mix deps.get --only docs
+after_script:
+  - MIX_ENV=docs mix deps.get
   - MIX_ENV=docs mix inch.report
 cache:
   directories:
